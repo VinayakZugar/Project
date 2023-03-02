@@ -13,7 +13,6 @@ public class BrowserLuanch {
 	
 	public static WebDriver Bl(String brows) {
 		if(brows.equals("Chrome")) {
-		 System.setProperty("webdriver.chrome.driver",PathConfig.CDriver);
 		 driver = new ChromeDriver();
 		 
 		}else if(brows.equals("Edge")) {

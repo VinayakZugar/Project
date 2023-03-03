@@ -39,8 +39,8 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version>
             <configuration>
-                <source>${java.version}</source>
-                <target>${java.version}</target>
+                <source>1.7</source>
+                <target>1.7</target>
                 <fork>true</fork>
                 <!-- this is to fix bitbucket pipeline build error due to Lombok processing -->
                 <compilerArgs>

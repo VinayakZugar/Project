@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Browser" value="Chrome"/>
   <listeners>
     <listener class-name="configuration.TestNgListeners"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testClasses.Test1">
+      <class name="testClasses.Calculator_TestClass">
         <methods>
-          <include name="termL"/>
-          <include name="browser"/>
-          <include name="tearMethod"/>
-          <include name="Tc_13"/>
+          <include name="TC_04_Subtraction"/>
+          <include name="browserLaunch"/>
+          <include name="TC_01_Multiplication"/>
+          <include name="teardown"/>
+          <include name="TC_03_Addition"/>
+          <include name="clear"/>
         </methods>
-      </class> <!-- testClasses.Test1 -->
+      </class> <!-- testClasses.Calculator_TestClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

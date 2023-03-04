@@ -36,30 +36,30 @@ public class Test1 {
 		String str = q.perc();
 		Assert.assertEquals(str, "Start");
 	}
-//	@Test
-//	public void Tc_02() throws InterruptedException {
-//		id="TC_02";
-//		q.haveInsuNO();
-//		Thread.sleep(1000);
-//		String str1 = q.perc();
-//		Assert.assertEquals(str1, "22%");
-//	}
-//
-//	@Test
-//	public void Tc_03() throws InterruptedException {
-//		id="TC_04";
-//		q.gender();
-//		Thread.sleep(1000);
-//		String str2 = q.perc();
-//		Assert.assertEquals(str2, "30%");
-//	}
-//	@Test
-//	public void Tc_04() throws InterruptedException {
-//		q.TobaccoY();
-//		Thread.sleep(1000);
-//		String str2 = q.perc();
-//		Assert.assertEquals(str2, "36%");
-//	}
+	@Test
+	public void Tc_02() throws InterruptedException {
+		id="TC_02";
+		q.haveInsuNO();
+		Thread.sleep(1000);
+		String str1 = q.perc();
+		Assert.assertEquals(str1, "22%");
+	}
+
+	@Test
+	public void Tc_03() throws InterruptedException {
+		id="TC_04";
+		q.gender();
+		Thread.sleep(1000);
+		String str2 = q.perc();
+		Assert.assertEquals(str2, "30%");
+	}
+	@Test
+	public void Tc_04() throws InterruptedException {
+		q.TobaccoY();
+		Thread.sleep(1000);
+		String str2 = q.perc();
+		Assert.assertEquals(str2, "36%");
+	}
 //	@Test
 //	public void Tc_05() throws InterruptedException {
 //		q.MarriedY();

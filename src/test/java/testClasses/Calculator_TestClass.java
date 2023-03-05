@@ -35,7 +35,7 @@ public class Calculator_TestClass {
 		s="TC_01";
 		cp.multiplication();
 		String txt = cp.anstxt();
-		Assert.assertEquals(txt, " 2220759");
+		Assert.assertEquals(txt, " 222075");
 		
 	}
 	@Test

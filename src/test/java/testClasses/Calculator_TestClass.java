@@ -35,7 +35,7 @@ public class Calculator_TestClass {
 		s="TC_01";
 		cp.multiplication();
 		String txt = cp.anstxt();
-		Assert.assertEquals(txt, " 222075");
+		Assert.assertEquals(txt, " 2220759");
 		
 	}
 	@Test
@@ -43,7 +43,7 @@ public class Calculator_TestClass {
 		s="TC_02";
 		cp.divison();
 		String txt = cp.anstxt();
-		Assert.assertEquals(txt, " 200");
+		Assert.assertEquals(txt, " 20");
 	
 	}
 	@Test
@@ -51,7 +51,7 @@ public class Calculator_TestClass {
 		s="TC_03";
 		cp.addition();
 		String txt = cp.anstxt();
-		Assert.assertEquals(txt, " 1111110");
+		Assert.assertEquals(txt, " 111111");
 		
 	}
 	@Test

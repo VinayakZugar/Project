@@ -15,7 +15,7 @@ import utility.BrowserLuanch;
 import utility.Screenshot;
 
 public class Calculator_TestClass {
-	
+	//Calculator Automation
 	WebDriver driver;
 	CalculatorPom cp;
 	String s;

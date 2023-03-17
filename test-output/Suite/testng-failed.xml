@@ -10,10 +10,9 @@
       <class name="testClasses.Calculator_TestClass">
         <methods>
           <include name="browserLaunch"/>
+          <include name="TC_01_Multiplication"/>
           <include name="teardown"/>
-          <include name="TC_03_Addition"/>
           <include name="clear"/>
-          <include name="TC_02_Division"/>
         </methods>
       </class> <!-- testClasses.Calculator_TestClass -->
     </classes>

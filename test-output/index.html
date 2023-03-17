@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Admin\eclipse-workspace\Project\testng.xml</span>
+                    <span>E:\Eclipse\Project\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,12 +104,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testClasses.Calculator_TestClass" class="method navigator-link" hash-for-method="TC_02_Division">TC_02_Division</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testClasses.Calculator_TestClass" class="method navigator-link" hash-for-method="TC_03_Addition">TC_03_Addition</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testClasses.Calculator_TestClass" class="method navigator-link" hash-for-method="TC_01_Multiplication">TC_01_Multiplication</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -123,7 +118,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testClasses.Calculator_TestClass" class="method navigator-link" hash-for-method="TC_01_Multiplication">TC_01_Multiplication</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testClasses.Calculator_TestClass" class="method navigator-link" hash-for-method="TC_02_Division">TC_02_Division</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testClasses.Calculator_TestClass" class="method navigator-link" hash-for-method="TC_03_Addition">TC_03_Addition</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -151,23 +151,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_02_Division">
-                  </a> <!-- TC_02_Division -->
-                  <span class="method-name">TC_02_Division</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [ 200] but found [ 20]
-	at testClasses.Calculator_TestClass.TC_02_Division(Calculator_TestClass.java:46)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_03_Addition">
-                  </a> <!-- TC_03_Addition -->
-                  <span class="method-name">TC_03_Addition</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [ 1111110] but found [ 111111]
-	at testClasses.Calculator_TestClass.TC_03_Addition(Calculator_TestClass.java:54)
+                  <a name="TC_01_Multiplication">
+                  </a> <!-- TC_01_Multiplication -->
+                  <span class="method-name">TC_01_Multiplication</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [ 22207] but found [ 222075]
+	at testClasses.Calculator_TestClass.TC_01_Multiplication(Calculator_TestClass.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
@@ -183,9 +171,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_01_Multiplication">
-                  </a> <!-- TC_01_Multiplication -->
-                  <span class="method-name">TC_01_Multiplication</span>
+                  <a name="TC_02_Division">
+                  </a> <!-- TC_02_Division -->
+                  <span class="method-name">TC_02_Division</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_03_Addition">
+                  </a> <!-- TC_03_Addition -->
+                  <span class="method-name">TC_03_Addition</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -200,7 +195,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\eclipse-workspace\Project\testng.xml</span>
+            <span class="header-content">E:\Eclipse\Project\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -255,26 +250,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_04_Subtraction')
+data.setCell(0, 1, 'TC_03_Addition')
 data.setCell(0, 2, 'testClasses.Calculator_TestClass')
-data.setCell(0, 3, 589);
+data.setCell(0, 3, 1342);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_03_Addition')
+data.setCell(1, 1, 'TC_02_Division')
 data.setCell(1, 2, 'testClasses.Calculator_TestClass')
-data.setCell(1, 3, 551);
+data.setCell(1, 3, 957);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TC_01_Multiplication')
 data.setCell(2, 2, 'testClasses.Calculator_TestClass')
-data.setCell(2, 3, 360);
+data.setCell(2, 3, 923);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_02_Division')
+data.setCell(3, 1, 'TC_04_Subtraction')
 data.setCell(3, 2, 'testClasses.Calculator_TestClass')
-data.setCell(3, 3, 314);
+data.setCell(3, 3, 882);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -306,44 +301,42 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_01_Multiplication</span>
-                <span class="method-start">5047 ms</span>
+                <span class="method-start">8168 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">clear([TestResult name=TC_01_Multiplication status=SUCCESS method=Calculator_TestClass.TC_01_Multiplicatio...)</span>
-                <span class="method-start">5415 ms</span>
+                <span class="method-name">clear([TestResult name=TC_01_Multiplication status=FAILURE method=Calculator_TestClass.TC_01_Multiplicatio...)</span>
+                <span class="method-start">9127 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TC_02_Division</span>
-                <span class="method-start">7500 ms</span>
+                <span class="method-start">11907 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">clear([TestResult name=TC_02_Division status=FAILURE method=Calculator_TestClass.TC_02_Division()[pri:0, i...)</span>
-                <span class="method-start">7834 ms</span>
+                <span class="method-name">clear([TestResult name=TC_02_Division status=SUCCESS method=Calculator_TestClass.TC_02_Division()[pri:0, i...)</span>
+                <span class="method-start">12869 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TC_03_Addition</span>
-                <span class="method-start">10109 ms</span>
+                <span class="method-start">14992 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">clear([TestResult name=TC_03_Addition status=FAILURE method=Calculator_TestClass.TC_03_Addition()[pri:0, i...)</span>
-                <span class="method-start">10664 ms</span>
+                <span class="method-name">clear([TestResult name=TC_03_Addition status=SUCCESS method=Calculator_TestClass.TC_03_Addition()[pri:0, i...)</span>
+                <span class="method-start">16334 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">TC_04_Subtraction</span>
-                <span class="method-start">12920 ms</span>
+                <span class="method-start">18383 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">clear([TestResult name=TC_04_Subtraction status=SUCCESS method=Calculator_TestClass.TC_04_Subtraction()[pr...)</span>
-                <span class="method-start">13509 ms</span>
+                <span class="method-start">19265 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">15607 ms</span>
+                <span class="method-start">21386 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

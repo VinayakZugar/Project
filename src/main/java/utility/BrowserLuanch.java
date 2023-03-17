@@ -2,6 +2,7 @@ package utility;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -13,7 +14,9 @@ public class BrowserLuanch {
 	
 	public static WebDriver Bl(String brows) {
 		if(brows.equals("Chrome")) {
-		 driver = new ChromeDriver();
+			ChromeOptions op = new ChromeOptions();
+			op.addArguments("--remote-allow-origins=*");
+		 driver = new ChromeDriver(op);
 		 
 		}else if(brows.equals("Edge")) {
 		System.setProperty("webdriver.edge.driver",PathConfig.EdgeDriver);
